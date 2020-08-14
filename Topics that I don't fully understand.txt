@@ -1,0 +1,4 @@
+Topics that I don't fully understand:
+- Closures
+- Observed Properties 
+- Git & Github 

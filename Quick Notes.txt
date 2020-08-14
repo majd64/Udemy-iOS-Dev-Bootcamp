@@ -1,0 +1,7 @@
+Guard means that an optional should not occur and if it does we must crash the application and call a fatal error to call attention to the nil value. If let is used when nils are a possibility that are expected and don't need the app to crash. 
+
+Switch statements should be used when you are checking the value of something against multiple cases (3+). Ifs can be used for logical checks. 
+
+Structs hold values whereas classes hold references. Structs, and all properties are immutable whereas class properties can be changed without the reference being changed. 
+
+Tuples are similar to dictionaries, but can hold different data types that are related. 

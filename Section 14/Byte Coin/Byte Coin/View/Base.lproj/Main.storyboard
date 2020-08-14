@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Byte_Coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FpK-wF-K0N">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-vh-o1i">
+                                <rect key="frame" x="50" y="44" width="314" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEd-5Q-pxG">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Wu1-qL-7s2">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="L6M-8X-O65"/>
+                                                    <constraint firstAttribute="height" constant="100" id="pww-27-Q0t"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000.00 USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqk-wl-9Fq">
+                                                <rect key="frame" x="100" y="0.0" width="214" height="100"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v03-W8-SNM">
+                                        <rect key="frame" x="0.0" y="602" width="314" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TwI-vh-o1i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Fr-du-MzM"/>
+                            <constraint firstItem="TwI-vh-o1i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="66p-Pa-bF5"/>
+                            <constraint firstItem="FpK-wF-K0N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9fc-PU-KLp"/>
+                            <constraint firstItem="TwI-vh-o1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="MsG-o4-WZI"/>
+                            <constraint firstItem="FpK-wF-K0N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VVX-Ir-v4F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TwI-vh-o1i" secondAttribute="bottom" id="XWe-LD-1fw"/>
+                            <constraint firstAttribute="bottom" secondItem="FpK-wF-K0N" secondAttribute="bottom" id="fV6-Qp-ejX"/>
+                            <constraint firstAttribute="trailing" secondItem="FpK-wF-K0N" secondAttribute="trailing" id="gjq-5O-JGJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TwI-vh-o1i" secondAttribute="trailing" constant="50" id="yUv-em-8wv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fiatPicker" destination="v03-W8-SNM" id="ZQw-YT-ZZg"/>
+                        <outlet property="priceLabel" destination="tqk-wl-9Fq" id="KeH-Wr-xwz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="322.66665649414062" height="322.66665649414062"/>
+        <image name="background" width="640" height="1136"/>
+    </resources>
+</document>
